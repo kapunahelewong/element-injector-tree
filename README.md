@@ -1,27 +1,10 @@
-# ElementInjectorReading
+# ElementInjector Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+This is an example of the ElementInjector at work in Angular. It has the following structure:
 
-## Development server
+* `FlowerService` provided in `root`, as well as in the `ChildComponent`
+* `AnimalService` provided in `@Component()` decorators
+* Three components: `AppComponent`, `ChildComponent`, `ChildComponent`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Notice that when you provide either of these services in the component, that the value in the component is the one Angular will use. It'll never see either the value in the `ModuleInjector`, nor the value in the parent component (ElementInjector) if there's a value provided in the current component.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

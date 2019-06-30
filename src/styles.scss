@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: #444;
+}
+
+.container {
+  padding: 1rem;
+  background-color: lightcyan;
+  border: solid 2px lightblue;
+  margin: 1rem 0;
+}
+
+.g-container {
+  padding: 1rem;
+  background-color: rgb(241, 239, 239);
+  margin: 1rem 0;
+  border: solid 2px lightblue;
+}
