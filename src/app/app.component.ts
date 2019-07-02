@@ -7,8 +7,6 @@ import { AnimalService } from './animal.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   providers: [AnimalService]
-  // viewProviders: [{ provide: AnimalService, useValue: { emoji: '🐶' } }]
-
 })
 export class AppComponent {
   constructor(public flower: FlowerService, public animal: AnimalService) {}
